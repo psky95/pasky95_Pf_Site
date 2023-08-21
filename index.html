@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="css/portfolio.css">
     <link rel="stylesheet" href="css/titlemovie.css">
 
+    <!-- 제이쿼리 -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" script type="text/javascript"></script>
+
     <!-- 햄버거와 애니메이트 css -->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.css'>
     <link rel="stylesheet" href="css/hamburger.css">
@@ -24,23 +27,6 @@
             //  $().clone < 이것은 클론 + .appendTo(); 를 적용시켜라
             $("header div ul.gnb").clone().appendTo("#menu .main-nav");
         });
-    </script>
-
-    <!-- 슬릭 -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $("#portfolio .wrap .pfpackage > div").slick({
-                infinite: true,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                dots: true,
-                speed: 800
-            });
-        });
-        
     </script>
 
     <!-- 사이드 네비 -->
@@ -111,7 +97,7 @@
         <div class="fullscreen-bg">
             <div class="video-container">
                 <video class="fullscreen-bg__video" autoplay loop muted>
-                    <source src="video/main_video1.mp4" type="video/mp4">
+                    <source src="video/main_video.mp4" type="video/mp4">
                 </video>
                 <img src="" alt="" class="fullscreen-bg__image">
             </div>
@@ -424,72 +410,79 @@
         <section id="portfolio">
             <div class="wrap paddingB100 paddingT100">
                 <h2 class="h2">Portfolio</h2>
-                <div class="pfpackage">
-                    <div class="pfbox1">
-                        <article class="pfimg1">
-                            <a href=""></a>
-                        </article>
-                        <div class="pftitle">
-                            <a class="pfh" href="">
-                                <div>
-                                    <h3 class="h3">한국 알콜산업</h3>
-                                    <h4 class="h4">기업 사이트 제작</h4>
-                                </div>
-                                <ul class="hashtag">
-                                    <li class="p"><span class="">#PC</span</li>
-                                    <li class="p"><span class="">#반응형</span></li>
-                                    <li class="p"><span class="">#UI 리뉴얼</span></li>
-                                    <li class="p"><span class="">#제작 100%</span></li>
-                                </ul>
-                                <a class="more" href=""><span class="h5">상세보기</span</a>
-                            </a>
+                <!-- 슬릭 -->
+                <link rel="stylesheet" href="css/slick.css">
+                <script src='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js'></script><script  src="slick/script.js"></script>
+                <link rel='stylesheet' href='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css'>
+                <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'><link rel="stylesheet" href="slick/style.css">
+                <!-- 슬릭 박스 -->
+                <div class="slick-slider js-slick">
+                    <div class="pfpackage">
+                        <div class="pfbox1">
+                            <article class="pfimg1">
+                                <a href=""></a>
+                            </article>
+                            <div class="pftitle">
+                                <a class="pfh" href="">
+                                    <div>
+                                        <h3 class="h3">한국 알콜산업</h3>
+                                        <h4 class="h4">기업 사이트 제작</h4>
+                                    </div>
+                                    <ul class="hashtag">
+                                        <li class="p"><span class="">#PC</span</li>
+                                        <li class="p"><span class="">#반응형</span></li>
+                                        <li class="p"><span class="">#UI 리뉴얼</span></li>
+                                        <li class="p"><span class="">#제작 100%</span></li>
+                                    </ul>
+                                    <a class="more" href=""><span class="h5">상세보기</span</a>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pfpackage">
+                        <div class="pfbox2">
+                            <article class="pfimg2">
+                                <a href=""></a>
+                            </article>
+                            <div class="pftitle">
+                                <a class="pfh" href="">
+                                    <div>
+                                        <h3 class="h3">CGV</h3>
+                                        <h4 class="h4">기업 사이트 제작</h4>
+                                    </div>
+                                    <ul class="hashtag">
+                                        <li class="p"><span class="">#PC</span</li>
+                                        <li class="p"><span class="">#반응형</span></li>
+                                        <li class="p"><span class="">UI 리뉴얼</span></li>
+                                        <li class="p"><span class="">#제작 100%</span></li>
+                                    </ul>
+                                    <a class="more" href=""><span class="h5">상세보기</span</a>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pfpackage">
+                        <div class="pfbox3">
+                            <article class="pfimg3">
+                                <a href=""></a>
+                            </article>
+                            <div class="pftitle">
+                                <a class="pfh" href="">
+                                    <div>
+                                        <h3 class="h3">제이쿼리</h3>
+                                        <h4 class="h4">제이쿼리 스킬사용 예시사이트</h4>
+                                    </div>
+                                    <ul class="hashtag">
+                                        <li class="p"><span class="">#CSS</span</li>
+                                        <li class="p"><span class="">#Jquery</span></li>
+                                        <li class="p"><span class="">#제작 100%</span></li>
+                                    </ul>
+                                    <a class="more" href=""><span class="h5">상세보기</span</a>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="pfpackage">
-                    <div class="pfbox2">
-                        <article class="pfimg2">
-                            <a href=""></a>
-                        </article>
-                        <div class="pftitle">
-                            <a class="pfh" href="">
-                                <div>
-                                    <h3 class="h3">CGV</h3>
-                                    <h4 class="h4">기업 사이트 제작</h4>
-                                </div>
-                                <ul class="hashtag">
-                                    <li class="p"><span class="">#PC</span</li>
-                                    <li class="p"><span class="">#반응형</span></li>
-                                    <li class="p"><span class="">UI 리뉴얼</span></li>
-                                    <li class="p"><span class="">#제작 100%</span></li>
-                                </ul>
-                                <a class="more" href=""><span class="h5">상세보기</span</a>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="pfpackage">
-                    <div class="pfbox3">
-                        <article class="pfimg3">
-                            <a href=""></a>
-                        </article>
-                        <div class="pftitle">
-                            <a class="pfh" href="">
-                                <div>
-                                    <h3 class="h3">제이쿼리</h3>
-                                    <h4 class="h4">제이쿼리 스킬사용 예시사이트</h4>
-                                </div>
-                                <ul class="hashtag">
-                                    <li class="p"><span class="">#CSS</span</li>
-                                    <li class="p"><span class="">#Jquery</span></li>
-                                    <li class="p"><span class="">#제작 100%</span></li>
-                                </ul>
-                                <a class="more" href=""><span class="h5">상세보기</span</a>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
             </div>
         </section>
         <!-- 컨택트 영역 -->
