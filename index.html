@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKY</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/titlemovie.css">
+
+    <!-- 햄버거와 애니메이트 css -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.css'>
+    <link rel="stylesheet" href="css/hamburger.css">
+
+    <!-- partial햄버거 -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script  src="hamburger/script.js"> </script>
+    <script>
+        $(document).ready(function(){
+            //  $().clone < 이것은 클론 + .appendTo(); 를 적용시켜라
+            $("header div ul.gnb").clone().appendTo("#menu .main-nav");
+        });
+    </script>
+
+    <!-- 슬릭 -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#portfolio .wrap .pfpackage > div").slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true,
+                speed: 800
+            });
+        });
+        
+    </script>
+
+    <!-- 사이드 네비 -->
+    <link rel="stylesheet" href="css/sidenav.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script  src="sidenav/script.js"></script>
+
+    <!-- 스킬 게이지 -->
+    <link rel="stylesheet" href="css/skill.css">
+    <script  src="skill/script.js"></script>
+
+    
+    <!-- 구글 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- 제이쿼리 연결 -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript"></script> 
+    
+    <!-- 스타일 -->
+    <style></style>
+     
+</head>
+<body>
+    <!-- 상단영역 -->
+    <header>
+        <div class="wrap">
+            <h1><a href="">Park Haneul</a></h1>
+            <ul class="gnb">
+                <li><a href="">About</a></li>
+                <li><a href="">SKILL</a></li>
+                <li><a href="">PORTFOLIO</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+            <button class="toggle-menu">
+                <span></span>
+            </button>
+            <div id="menu" class="">
+                <nav class="main-nav">
+                 
+                </nav>
+                <footer class="menu-footer">
+                    <nav class="footer-nav">
+                      <ul>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-twitter fa-fw"></i>
+                            Github
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-envelope fa-fw"></i>
+                            Kakaotalk
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </footer>
+            </div>
+        </div>
+    </header>
+    <!-- div#title>h2 -->
+    <div id="title">
+        <!-- 타이틀 무비 & 이미지 -->
+        <div class="fullscreen-bg">
+            <div class="video-container">
+                <video class="fullscreen-bg__video" autoplay loop muted>
+                    <source src="video/main_video1.mp4" type="video/mp4">
+                </video>
+                <img src="" alt="" class="fullscreen-bg__image">
+            </div>
+        </div>
+        <!-- 스크롤 다운 -->
+        <div class="scroll-downs">
+            <div class="mousey">
+                <div class="scroller"></div>
+            </div>
+            <span class="scrollerspan">scroll down</span>
+        </div>
+        <!-- 사이드 네비 -->
+        <div class="menu">
+            <a class="dot" href="#title">
+                <span class="forty">Title</span>
+            </a>
+            <a class="dot" href="#about">
+                <span class="fifty">About</span>
+            </a>
+            <a class="dot" href="#skill">
+                <span class="forty">Skill</span>
+            </a>
+            <a class="dot" href="#portfolio">
+                <span class="sixty">Portfolio</span>
+            </a>
+        </div>
+    </div>
+    <!-- 메인 영역 -->
+    <!-- 어바웃 영역 -->
+    <main>
+        <section id="about" class="paddingT100 section">
+            <div class="wrap padding50">
+                <figure>
+                    <img src="https://via.placeholder.com/340" alt="정면사진">
+                    <figcaption class="hide">박하늘의 프로필이미지 사진</figcaption>
+                </figure>
+                <div class="hello">
+                    <h2>ABOUT</h2>
+                    <div class="about">
+                        <p>만나서 반갑습니다. O OOOO 박하늘입니다. 
+                            <span class="block">웹을 통한 우리의 역할은 곧 그 브랜드의 상품과 기업의 가치를 높이는 일이라고 생각합니다.</span>
+                            <span class="block">그러기 위해 우리는 이용자에게 멋진 사용자 경험을 선사하는것부터가 시작이라고 생각합니다. </span>
+                            <span class="blcok">하지만 멋진 사용자 경험이라는 것은 뭘까요?</span>
+                            <span class="block">저는 얼마전까지 일반적인 사용자의 입장이었던 만큼 어느 웹사이트를 이용해도</span>
+                            <span></span>
+                            
+                    </div>
+                    <div class="career">
+                        <h3>Experiences & Education</h3>
+                        <ul>
+                            <li>2023.06 ~ 2023.10 : UI/UX 웹퍼블리셔&웹디자인 양성과정</li>
+                            <li>2023.02 ~ 2023.04 : TDS테크-Reverse Engineering/3D Scan 천안 삼성SDI 파견</li>
+                            <li>2023.01 ~ 2023.02 : TDS테크-Reverse Engineering/3D Scan 평택 삼성중공업 파견</li>
+                            <li>2018.10 ~ 2022.10 : 이레상사 근무(대리)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 스킬 영역 -->
+        <section id="skill">
+            <div class="wrap paddingT100 paddingB50">
+                <figure>
+                    <img src="" alt="책상과 노트북">
+                    <figcaption class="hide">책상과 노트북이 있는 사진</figcaption>
+                </figure>    
+                <h2 class="h2">SKILL</h2>
+                <div class="ddtech">
+                    <h3 class="h3">Disgin Tech</h3>
+                    <ul class="list">
+                        <li>적절한 디자인 가이드를 세우고, 통일성 있고 일관적인 UI를 제작하여 빠른 피드백과 개발이 가능하도록 하는 것을 지향하고 있습니다.</li>
+                        <li>협업의 경험을 살려 여러 사람의 의견을 반영하고 더 나은 결과물을 만들기 위해 노력합니다.</li>
+                        <li>레이아웃 배치, 컬러 등 사용자 입장에서 최상의 경험을 할 수 있도록 하고, 불편함이 없도록 디자인하고자 노력합니다.</li>
+                        <li>Photoshop, Illustrator를 이용한 디자인 및 편집 작업이 가능합니다.</li>
+                        <li>XD, Figma를 이용한 UX/UI 설계와 프로토타이핑이 가능합니다.</li>
+                        <li>After effects를 이용한 모션그래픽 제작 및 영상 편집을 할 수 있습니다.</li>
+                    </ul>
+                    <ul class="progress">
+                        <!--  Item  -->
+                        <li data-name="Figma" data-percent="73%">
+                            <svg viewBox="-10 -10 220 220">
+                            <g fill="none" stroke-width="12" transform="translate(100,100)">
+                            <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
+                            <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)"/>
+                            <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)"/>
+                            <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)"/>
+                            <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)"/>
+                            <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)"/>
+                            </g>
+                            </svg>
+                            <svg viewBox="-10 -10 220 220">
+                            <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="459"></path>
+                            </svg>
+                        </li>
+                        <!--  Item  -->
+                        <li data-name="Phtoshop" data-percent="87%">
+                            <svg viewBox="-10 -10 220 220">
+                            <g fill="none" stroke-width="12" transform="translate(100,100)">
+                            <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
+                            <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)"/>
+                            <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)"/>
+                            <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)"/>
+                            <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)"/>
+                            <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)"/>
+                            </g>
+                            </svg>
+                            <svg viewBox="-10 -10 220 220">
+                            <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="547"></path>
+                            </svg>
+                        </li>
+                        <!--  Item  -->
+                        <li data-name="XD" data-percent="85%">
+                            <svg viewBox="-10 -10 220 220">
+                            <g fill="none" stroke-width="12" transform="translate(100,100)">
+                            <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
+                            <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)"/>
+                            <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)"/>
+                            <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)"/>
+                            <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)"/>
+                            <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)"/>
+                            </g>
+                            </svg>
+                            <svg viewBox="-10 -10 220 220">
+                            <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="535"></path>
+                            </svg>
+                        </li>
+                        <!--  Item  -->
+                        <li data-name="UI / UX" data-percent="97%">
+                            <svg viewBox="-10 -10 220 220">
+                            <g fill="none" stroke-width="12" transform="translate(100,100)">
+                            <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
+                            <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)"/>
+                            <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)"/>
+                            <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)"/>
+                            <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)"/>
+                            <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)"/>
+                            </g>
+                            </svg>
+                            <svg viewBox="-10 -10 220 220">
+                            <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="610"></path>
+                            </svg>
+                        </li>
+                        <li data-name="illustrator" data-percent="72%">
+                            <svg viewBox="-10 -10 220 220">
+                            <g fill="none" stroke-width="12" transform="translate(100,100)">
+                            <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
+                            <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)"/>
+                            <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)"/>
+                            <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)"/>
+                            <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)"/>
+                            <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)"/>
+                            </g>
+                            </svg>
+                            <svg viewBox="-10 -10 220 220">
+                            <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="452"></path>
+                            </svg>
+                        </li>
+                    </ul>
+                    <!--  Defining Angle Gradient Colors  -->
+                    <svg width="0" height="0">
+                        <defs>
+                        <linearGradient id="cl1" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1">
+                            <stop stop-color="#618099"/>
+                            <stop offset="100%" stop-color="#8e6677"/>
+                        </linearGradient>
+                        <linearGradient id="cl2" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="0" y2="1">
+                            <stop stop-color="#8e6677"/>
+                            <stop offset="100%" stop-color="#9b5e67"/>
+                        </linearGradient>
+                        <linearGradient id="cl3" gradientUnits="objectBoundingBox" x1="1" y1="0" x2="0" y2="1">
+                            <stop stop-color="#9b5e67"/>
+                            <stop offset="100%" stop-color="#9c787a"/>
+                        </linearGradient>
+                        <linearGradient id="cl4" gradientUnits="objectBoundingBox" x1="1" y1="1" x2="0" y2="0">
+                            <stop stop-color="#9c787a"/>
+                            <stop offset="100%" stop-color="#817a94"/>
+                        </linearGradient>
+                        <linearGradient id="cl5" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="0" y2="0">
+                            <stop stop-color="#817a94"/>
+                            <stop offset="100%" stop-color="#498a98"/>
+                        </linearGradient>
+                        <linearGradient id="cl6" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0">
+                            <stop stop-color="#498a98"/>
+                            <stop offset="100%" stop-color="#618099"/>
+                        </linearGradient>
+                        </defs>
+                        </svg>
+                    <div class="ditech">
+                        <h3 class="h3">Develop Tech</h3>
+                        <ul class="list">
+                            <li>재활용이나 유지보수가 쉬운 코드를 짤 수 있는지 항상 생각하고 노력합니다.</li>
+                            <li>SEO 최적화를 위해 페이지 구조와 시멘틱 태그의 의미를 고려하며 마크업을 하고자 하며 웹 표준과 웹 접근성 준수합니다</li>
+                            <li>CSS, SCSS 등을 통해 디자인 결과물과 흡사하게 웹에 구현해 낼 수 있으며 반응형 웹 퍼블리싱이 가능합니다.</li>
+                        </ul>
+                        <ul class="progress">
+                            <!--  Item  -->
+                            <li data-name="CSS3" data-percent="93%">
+                                <svg viewBox="-10 -10 220 220">
+                                <g fill="none" stroke-width="12" transform="translate(100,100)">
+                                <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
+                                <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)"/>
+                                <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)"/>
+                                <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)"/>
+                                <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)"/>
+                                <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)"/>
+                                </g>
+                                </svg>
+                                <svg viewBox="-10 -10 220 220">
+                                <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="585"></path>
+                                </svg>
+                            </li>
+                            <!--  Item  -->
+                            <li data-name="SCSS" data-percent="95%">
+                                <svg viewBox="-10 -10 220 220">
+                                <g fill="none" stroke-width="12" transform="translate(100,100)">
+                                <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
+                                <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)"/>
+                                <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)"/>
+                                <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)"/>
+                                <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)"/>
+                                <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)"/>
+                                </g>
+                                </svg>
+                                <svg viewBox="-10 -10 220 220">
+                                <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="598"></path>
+                                </svg>
+                            </li>
+                            <!--  Item  -->
+                            <li data-name="Javascript" data-percent="84%">
+                                <svg viewBox="-10 -10 220 220">
+                                <g fill="none" stroke-width="12" transform="translate(100,100)">
+                                <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
+                                <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)"/>
+                                <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)"/>
+                                <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)"/>
+                                <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)"/>
+                                <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)"/>
+                                </g>
+                                </svg>
+                                <svg viewBox="-10 -10 220 220">
+                                <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="528"></path>
+                                </svg>
+                            </li>
+                            <!--  Item  -->
+                            <li data-name="JQuery" data-percent="87%">
+                                <svg viewBox="-10 -10 220 220">
+                                <g fill="none" stroke-width="12" transform="translate(100,100)">
+                                <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
+                                <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)"/>
+                                <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)"/>
+                                <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)"/>
+                                <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)"/>
+                                <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)"/>
+                                </g>
+                                </svg>
+                                <svg viewBox="-10 -10 220 220">
+                                <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="547"></path>
+                                </svg>
+                            </li>
+                            <li data-name="Vue.js" data-percent="82%">
+                                <svg viewBox="-10 -10 220 220">
+                                <g fill="none" stroke-width="12" transform="translate(100,100)">
+                                <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
+                                <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)"/>
+                                <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)"/>
+                                <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)"/>
+                                <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)"/>
+                                <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)"/>
+                                </g>
+                                </svg>
+                                <svg viewBox="-10 -10 220 220">
+                                <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="516"></path>
+                                </svg>
+                            </li>
+                        </ul>
+                        <!--  Defining Angle Gradient Colors  -->
+                        <svg width="0" height="0">
+                            <defs>
+                            <linearGradient id="cl1" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1">
+                                <stop stop-color="#618099"/>
+                                <stop offset="100%" stop-color="#8e6677"/>
+                            </linearGradient>
+                            <linearGradient id="cl2" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="0" y2="1">
+                                <stop stop-color="#8e6677"/>
+                                <stop offset="100%" stop-color="#9b5e67"/>
+                            </linearGradient>
+                            <linearGradient id="cl3" gradientUnits="objectBoundingBox" x1="1" y1="0" x2="0" y2="1">
+                                <stop stop-color="#9b5e67"/>
+                                <stop offset="100%" stop-color="#9c787a"/>
+                            </linearGradient>
+                            <linearGradient id="cl4" gradientUnits="objectBoundingBox" x1="1" y1="1" x2="0" y2="0">
+                                <stop stop-color="#9c787a"/>
+                                <stop offset="100%" stop-color="#817a94"/>
+                            </linearGradient>
+                            <linearGradient id="cl5" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="0" y2="0">
+                                <stop stop-color="#817a94"/>
+                                <stop offset="100%" stop-color="#498a98"/>
+                            </linearGradient>
+                            <linearGradient id="cl6" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0">
+                                <stop stop-color="#498a98"/>
+                                <stop offset="100%" stop-color="#618099"/>
+                            </linearGradient>
+                            </defs>
+                            </svg>
+                    </div>
+                </div>    
+            </div>
+        </section>
+        <!-- 포트폴리오 영역 -->
+        <section id="portfolio">
+            <div class="wrap paddingB100 paddingT100">
+                <h2 class="h2">Portfolio</h2>
+                <div class="pfpackage">
+                    <div class="pfbox1">
+                        <article class="pfimg1">
+                            <a href=""></a>
+                        </article>
+                        <div class="pftitle">
+                            <a class="pfh" href="">
+                                <div>
+                                    <h3 class="h3">한국 알콜산업</h3>
+                                    <h4 class="h4">기업 사이트 제작</h4>
+                                </div>
+                                <ul class="hashtag">
+                                    <li class="p"><span class="">#PC</span</li>
+                                    <li class="p"><span class="">#반응형</span></li>
+                                    <li class="p"><span class="">#UI 리뉴얼</span></li>
+                                    <li class="p"><span class="">#제작 100%</span></li>
+                                </ul>
+                                <a class="more" href=""><span class="h5">상세보기</span</a>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pfpackage">
+                    <div class="pfbox2">
+                        <article class="pfimg2">
+                            <a href=""></a>
+                        </article>
+                        <div class="pftitle">
+                            <a class="pfh" href="">
+                                <div>
+                                    <h3 class="h3">CGV</h3>
+                                    <h4 class="h4">기업 사이트 제작</h4>
+                                </div>
+                                <ul class="hashtag">
+                                    <li class="p"><span class="">#PC</span</li>
+                                    <li class="p"><span class="">#반응형</span></li>
+                                    <li class="p"><span class="">UI 리뉴얼</span></li>
+                                    <li class="p"><span class="">#제작 100%</span></li>
+                                </ul>
+                                <a class="more" href=""><span class="h5">상세보기</span</a>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pfpackage">
+                    <div class="pfbox3">
+                        <article class="pfimg3">
+                            <a href=""></a>
+                        </article>
+                        <div class="pftitle">
+                            <a class="pfh" href="">
+                                <div>
+                                    <h3 class="h3">제이쿼리</h3>
+                                    <h4 class="h4">제이쿼리 스킬사용 예시사이트</h4>
+                                </div>
+                                <ul class="hashtag">
+                                    <li class="p"><span class="">#CSS</span</li>
+                                    <li class="p"><span class="">#Jquery</span></li>
+                                    <li class="p"><span class="">#제작 100%</span></li>
+                                </ul>
+                                <a class="more" href=""><span class="h5">상세보기</span</a>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- 컨택트 영역 -->
+        <section id="contect">
+            <div class="wrap">
+                
+            </div>
+        </section>
+    </main>
+    <!-- 하단영역 -->
+    <footer></footer>
+</body>
+</html>

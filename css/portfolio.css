@@ -1,0 +1,104 @@
+/* 포트폴리오 공통 스타일 */
+#portfolio .wrap .pfpackage> div:nth-of-type(1) {
+  
+  display: flex;
+  height: 330px;
+}
+#portfolio .wrap .pfpackage article {
+  
+  width: calc(100% / 2);
+}
+#portfolio .wrap .pfpackage div.pftitle { 
+  width: calc(100% / 2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0px 0 15px 50px;
+  box-sizing: border-box;
+}
+#portfolio .wrap .pfpackage div.pftitle > a.pfh >div h3 {
+  
+  line-height: 1.6;
+}
+#portfolio .wrap .pfpackage div.pftitle > a.pfh >div h4 {
+  
+  margin-top: 10px;
+  color: #aeaeae;
+  font-weight: 400;
+}
+#portfolio .wrap .pfpackage div.pftitle > a.pfh ul.hashtag {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+#portfolio .wrap .pfpackage div.pftitle > a.pfh ul.hashtag li {
+  
+  border: 2px solid rgba(10, 205, 206, 0.25);
+  padding: 7px 12px;
+  border-radius: 1.3rem;
+}
+#portfolio .wrap .pfpackage article > a{
+  width: 600px;
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-sizing: border-box;
+  height: 100%;
+  border-radius: 10px;
+}
+#portfolio .wrap .pfpackage div.pftitle > a.pfh ul.hashtag li span{
+  
+  color: #0ac7c8;
+}
+#portfolio .wrap .pfpackage div.pftitle > a.more:hover{
+  background-color: rgb(10, 205, 206);
+}
+#portfolio .wrap .pfpackage div.pftitle > a.more:hover span{  
+  color: rgb(34, 34, 34);
+}
+#portfolio .wrap .pfpackage div.pftitle > a.more span{  
+  color: #0ac7c8;
+  font-weight: 600;
+}
+/* 포트폴리오 영역 */
+#portfolio {
+  background-color: #222;
+}
+#portfolio .wrap {  
+  padding-top: 250px;
+  padding-bottom: 300px;
+}
+#portfolio .wrap h2 { 
+  text-shadow: #FFF 1px 0 10px;
+}
+#portfolio .wrap .pfpackage{
+  
+  padding: 50px 0;
+}
+#portfolio .wrap div.pfbox1 article.pfimg1 > a {
+  
+  background-image: url(../img/port1.png);
+}
+#portfolio .wrap div.pfbox1 div.pftitle > a.pfh {
+  
+}
+#portfolio .wrap div.pfbox1 div.pftitle > a.pfh >div{
+  
+}
+
+#portfolio .wrap div.pfbox1 div.pftitle > a.more {
+
+}
+
+/* pfbox2 영역 */
+#portfolio .wrap div.pfbox2 article.pfimg2 > a {
+  
+  background-image: url(../img/port2.png);
+}
+/* pfbox3 영역 */
+#portfolio .wrap div.pfbox3 article.pfimg3 > a {
+  
+  background-image: url(../img/port3.png);
+  background-size: inherit;
+}

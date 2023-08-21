@@ -1,0 +1,45 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+.menu {
+  position: fixed;
+  top: 50%;
+  right: 100px;
+  transform: translateY(-50%);
+}
+.menu .dot {
+  display: block;
+  border: 3px solid #0ac7c8;
+  background: #0ac7c8;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  color: #000;
+  text-decoration: none;
+}
+.menu .dot, .menu .dot:hover, .menu .dot span {
+  transition: all 200ms ease;
+}
+.menu .dot:hover, .menu .dot.active {
+  background: transparent;
+  transform: scale(1.2);
+}
+.menu .dot:hover span, .menu .dot.active span {
+  opacity: 1;
+}
+.menu .dot:hover span.forty, .menu .dot.active span.forty {
+  transform: translate(-45px, -3px);
+}
+.menu .dot:hover span.fifty, .menu .dot.active span.fifty {
+  transform: translate(-55px, -3px);
+}
+.menu .dot:hover span.sixty, .menu .dot.active span.sixty {
+  transform: translate(-70px, -3px);
+}
+.menu .dot span {
+  font-size: 14px;
+  display: block;
+  transform: translate(0, -3px);
+  opacity: 0;
+  color: white;
+}

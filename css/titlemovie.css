@@ -1,0 +1,48 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.fullscreen-bg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /*! margin-top: 1px; */
+}
+.video-container::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.fullscreen-bg__video{
+    
+    opacity: 0.34;
+}
+.fullscreen-bg__video,
+.fullscreen-bg__image {
+    position: absolute;
+    top: 1px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.fullscreen-bg__image {
+    mix-blend-mode: exclusion; /* 이미지와 동영상을 스크린 블렌딩 모드로 겹쳐 보이게 했음 */
+    background-image: url(../img/muje2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /*! mix-blend-mode: screen; */
+}
