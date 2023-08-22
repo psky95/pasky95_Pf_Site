@@ -51,25 +51,28 @@
   
   color: #0ac7c8;
 }
+#portfolio .wrap div.pfbox1 div.pftitle > a.more {
+
+}
 #portfolio .wrap .pfpackage div.pftitle > a.more:hover{
   background-color: rgb(10, 205, 206);
-}
-#portfolio .wrap .pfpackage div.pftitle > a.more:hover span{  
-  color: rgb(34, 34, 34);
 }
 #portfolio .wrap .pfpackage div.pftitle > a.more span{  
   color: #0ac7c8;
   font-weight: 600;
+}
+#portfolio .wrap .pfpackage div.pftitle > a.more:hover span{  
+  color: rgb(34, 34, 34);
 }
 /* 포트폴리오 영역 */
 #portfolio {
   background-color: #222;
 }
 #portfolio .wrap {  
-  padding-top: 250px;
+  padding-top: 200px;
   padding-bottom: 300px;
 }
-#portfolio .wrap h2 { 
+#portfolio .wrap h2.h2{ 
   text-shadow: #FFF 1px 0 10px;
 }
 #portfolio .wrap .contentslide{
@@ -83,16 +86,14 @@
   
   background-image: url(../img/port1.png);
 }
-#portfolio .wrap div.pfbox1 div.pftitle > a.pfh {
+#portfolio .wrap div.pfbox1 div.pftitle > div.pfh {
   
 }
-#portfolio .wrap div.pfbox1 div.pftitle > a.pfh >div{
+#portfolio .wrap div.pfbox1 div.pftitle > div.pfh >div{
   
 }
 
-#portfolio .wrap div.pfbox1 div.pftitle > a.more {
 
-}
 
 /* pfbox2 영역 */
 #portfolio .wrap div.pfbox2 article.pfimg2 > a {
@@ -104,4 +105,43 @@
   
   background-image: url(../img/port3.png);
   background-size: inherit;
+}
+/* 변경된 코드 */
+#portfolio .wrap .pfpackage div.pftitle > div.pfh >div h3 {
+  
+  line-height: 1.6;
+}
+#portfolio .wrap .pfpackage div.pftitle > div.pfh >div h4 {
+  
+  margin-top: 10px;
+  color: #aeaeae;
+  font-weight: 400;
+}
+#portfolio .wrap .pfpackage div.pftitle > div.pfh ul.hashtag {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+#portfolio .wrap .pfpackage div.pftitle > div.pfh ul.hashtag li {
+  
+  border: 2px solid rgba(10, 205, 206, 0.25);
+  padding: 7px 12px;
+  border-radius: 1.3rem;
+}
+#portfolio .wrap .pfpackage div.pftitle > div.pfh ul.hashtag li span{
+  
+  color: #0ac7c8;
+}
+#portfolio .wrap div.pfbox1 div.pftitle > div.more {
+
+}
+#portfolio .wrap div.pfbox1 div.pftitle > div.more:hover{
+  background-color: rgb(10, 205, 206);
+}
+#portfolio .wrap div.pfbox1 div.pftitle > div.more span{  
+  color: #0ac7c8;
+  font-weight: 600;
+}
+#portfolio .wrap div.pfbox1 div.pftitle > div.more:hover span{  
+  color: rgb(34, 34, 34);
 }

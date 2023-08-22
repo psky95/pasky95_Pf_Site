@@ -173,7 +173,7 @@
 }
 
 .slick-prev {
-  left: -55px;
+  left: -85px;
   z-index: 1;
 }
 
@@ -214,7 +214,7 @@
 
 .slick-dots {
   position: absolute;
-  bottom: 16px;
+  bottom: 0px;
   display: block;
   width: 100%;
   padding: 0;
@@ -237,8 +237,8 @@
   font-size: 0;
   line-height: 0;
   display: block;
-  width: 16px;
-  height: 16px;
+  width: 10px;
+  height: 10px;
   padding: 8px;
   cursor: pointer;
   color: transparent;
@@ -259,25 +259,27 @@
 
 .slick-dots li button:before {
   font-family: "FontAwesome";
-  font-size: 16px;
+  font-size: 10px;
   line-height: 1;
   position: absolute;
   top: 0;
   left: 0;
-  width: 16px;
-  height: 16px;
+  width: 10px;
+  height: 10px;
   content: "";
   text-align: center;
-  opacity: 0.25;
-  color: black;
+  opacity: 1;
+  color: rgb(204, 204, 204);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   transition: opacity 0.25s;
 }
 
 .slick-dots li.slick-active button:before {
-  opacity: 0.75;
-  color: black;
+  color: rgb(10, 205, 206) !important;
+  text-shadow: rgba(10, 205, 206, 0.5) 0rem 0rem 0.8rem;
+  font-size: 14px;
+  line-height: 0.75;
 }
 
 /**

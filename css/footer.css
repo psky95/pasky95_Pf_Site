@@ -1,0 +1,31 @@
+section#footer{
+    
+  background-color: #222;
+}
+section#footer .wrap{
+    
+}
+section#footer .wrap div.ftbox{
+    
+}
+section#footer .wrap div.ftinfo{
+    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section#footer .wrap div.ftinfo .p:nth-of-type(2){
+  
+  color: darkgray;
+  margin-top: 10px;
+}
+section#footer .wrap div.ftinfo .p{
+    
+  text-align: center;
+  font-size: 1.2rem;
+}
+section#footer .wrap div.ftinfo span{
+    
+  line-height: 2;
+}
+ 

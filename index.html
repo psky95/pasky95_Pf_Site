@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/portfolio.css">
     <link rel="stylesheet" href="css/titlemovie.css">
+    <link rel="stylesheet" href="css/contect.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/textanimation.css">
 
     <!-- 제이쿼리 -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" script type="text/javascript"></script>
@@ -111,7 +114,7 @@
         </div>
         <!-- 사이드 네비 -->
         <div class="menu">
-            <a class="dot" href="#title">
+            <a class="dot active" href="#title">
                 <span class="forty">Title</span>
             </a>
             <a class="dot" href="#about">
@@ -122,6 +125,9 @@
             </a>
             <a class="dot" href="#portfolio">
                 <span class="sixty">Portfolio</span>
+            </a>
+            <a class="dot" href="#contect">
+                <span class="fifty">Contect</span>
             </a>
         </div>
     </div>
@@ -137,12 +143,13 @@
                 <div class="hello">
                     <h2>ABOUT</h2>
                     <div class="about">
-                        <p>만나서 반갑습니다. O OOOO 박하늘입니다. 
-                            <span class="block">웹을 통한 우리의 역할은 곧 그 브랜드의 상품과 기업의 가치를 높이는 일이라고 생각합니다.</span>
-                            <span class="block">그러기 위해 우리는 이용자에게 멋진 사용자 경험을 선사하는것부터가 시작이라고 생각합니다. </span>
-                            <span class="blcok">하지만 멋진 사용자 경험이라는 것은 뭘까요?</span>
-                            <span class="block">저는 얼마전까지 일반적인 사용자의 입장이었던 만큼 어느 웹사이트를 이용해도</span>
-                            <span></span>
+                        <p>만나서 반갑습니다. O OOOO 박하늘입니다.</br>
+                            웹을 통한 우리의 역할은 곧 그 브랜드의 상품과 기업의 가치를 높이는 일이라고 생각합니다.</br>
+                            그러기 위해 우리는 이용자에게 멋진 사용자 경험을 선사하는것부터가 시작이라고 생각합니다.</br>
+                            하지만 멋진 사용자 경험이라는 것은 뭘까요?</br>
+                            저는 얼마전까지 일반적인 사용자의 입장이었던 만큼 어느 웹사이트를 이용해도 별 다른</br>
+                            차이점이나 사용자 경험으로써의 기억이 남는 웹페이지는 없었다고 생각합니다</br>
+                            
                             
                     </div>
                     <div class="career">
@@ -409,7 +416,7 @@
         <!-- 포트폴리오 영역 -->
         <section id="portfolio">
             <div class="wrap paddingB100 paddingT100">
-                <h2 class="h2">Portfolio</h2>
+                <h2 class="h2">PORTFOLIO<h2>               
                 <!-- 슬릭 -->
                 <link rel="stylesheet" href="css/slick.css">
                 <script src='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js'></script><script  src="slick/script.js"></script>
@@ -487,12 +494,42 @@
         </section>
         <!-- 컨택트 영역 -->
         <section id="contect">
-            <div class="wrap">
-                
+            <div class="wrap paddingB100 paddingT100">
+                <h2 class="h2 hide">CONTECT</h2>
+                <div class="ctbox">
+                    <div class="ctimg">
+                        <img src="https://via.placeholder.com/340" alt="프로필이미지">
+                    </div>
+                    <div class="ctinfo">
+                        <h3 class="h3">여기다가 써야할거<span class="block">요기다가 써야할거</span></h3>
+                        <div class="ctinfop">
+                            <p class="p">저는 얼마전까지 일반적인 사용자의 입장이었던 만큼 어느 웹사이트를 이용해도 별 다른
+                                </br>차이점이나 사용자 경험으로써의 기억이 남는 웹페이지는 없었다고 생각합니다
+                                </br><span class="block">스팬 블락으로 문단을 나누는 기준이 될곳</span>
+                                </br>iwqjdoiwqjdoiwqjiowqdhnwqoidhwqoidhoiwqhdoiwqhdoiwqhdoiwhqiodhwoidhwioqhdiowhdiowq
+                                </br>감사합니다 땡큐
+                            </p>
+                        </div>
+                        <div class="ctsitego">
+                            <button><a class="more" href=""><span class="h5">E-Mail</span></a></button>
+                            <button><a class="more" href=""><span class="h5">KakaoTalk</span></a></button>
+                            <button><a class="more" href=""><span class="h5">GitHub</span></a></button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
     <!-- 하단영역 -->
-    <footer></footer>
+    <footer>
+        <section id="footer">
+            <div class="ftbox wrap paddingB100 paddingT100">
+                <div class="ftinfo">
+                    <p class="p">본 페이지는 상업적 목적이 아닌<span class="block">개인 포트폴리오용으로 제작되었습니다.</span></p>
+                    <p class="p">© 2023 Park-Ha-Neul. All Rights Reserved.</p>
+                </div>
+            </div>
+        </section>
+    </footer>
 </body>
 </html>

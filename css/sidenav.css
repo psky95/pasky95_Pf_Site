@@ -9,8 +9,8 @@
   display: block;
   margin-bottom: 24px;
   border-radius: 10px;
-  width: 7px;
-  height: 7px;
+  width: 10px;
+  height: 10px;
   cursor: pointer;
   color: #000;
   text-decoration: none;
@@ -34,7 +34,6 @@
   box-shadow: rgba(10, 205, 206, 0.5) 0rem 0rem 0.8rem;
 }
 .menu .dot, .menu .dot:hover, .menu .dot.active {
-  transition: all 400ms ease; /* 애니메이션 지속시간을 더 길게 조정 */
 }
 .menu .dot:hover span, .menu .dot.active span {
   opacity: 1;
