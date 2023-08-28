@@ -7,3 +7,16 @@ div#container> img {
     bottom: 0;
     margin: auto;
 }
+
+/* hover color */
+a svg:hover #drive,
+a svg:hover #github{ 
+  fill: #0acdce;
+}
+a svg #drive,
+a svg #github { 
+  transition: 200ms;
+  transition-timing-function: ease-in-out;
+  -webkit-transition: 200ms;
+  -webkit-transition-timing-function: ease-in-out;
+}

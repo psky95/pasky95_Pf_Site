@@ -27,8 +27,12 @@
     <script  src="hamburger/script.js"> </script>
     <script>
         $(document).ready(function(){
-            //  $().clone < 이것은 클론 + .appendTo(); 를 적용시켜라
-            $("header div ul.gnb").clone().appendTo("#menu .main-nav");
+            $("#menu ul a").click(function(){
+        
+                // 를 클릭했을때 메뉴창 닫아버리기
+                // $("#menu").removeClass("open");
+            });
+
         });
     </script>
 
@@ -41,37 +45,87 @@
     <link rel="stylesheet" href="css/skill.css">
     <script  src="skill/script.js"></script>
 
-    
-    <!-- 구글 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <!-- 프리텐다드 글꼴 -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
     
     <!-- 제이쿼리 연결 -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" type="text/javascript"></script>
     <script type="text/javascript"></script> 
     
     <!-- 스타일 -->
-    <style></style>
+    <style>
+
+    </style>
      
 </head>
 <body>
     <!-- 상단영역 -->
     <header>
         <div class="wrap">
-            <h1><a href="">Park Haneul</a></h1>
+            <h1><a class="h5" href="">Park Haneul</a></h1>
             <ul class="gnb">
-                <li><a href="">About</a></li>
-                <li><a href="">SKILL</a></li>
-                <li><a href="">PORTFOLIO</a></li>
-                <li><a href="">CONTACT</a></li>
+                <li><a class="logohover" href="https://drive.google.com/drive/my-drive">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="30px" height="30px" viewBox="0 0 550.801 550.801" style="enable-background:new 0 0 550.801 550.801;"
+                    xml:space="preserve">
+                    <g><g id="drive"><path d="M538.051,339.15L362.1,33.15H188.7l0,0l175.951,306H538.051z M216.75,364.65l-86.7,153H464.1l86.701-153H216.75z
+                            M165.75,71.4L0,364.65l86.7,153L255,224.4L165.75,71.4z"/></g></g>
+                    </svg>
+                </a>
+            </li>
+                <li><a class="logohover" href="https://github.com/psky95/psky95">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        width="30px" height="30px" viewBox="0 0 438.549 438.549" style="enable-background:new 0 0 438.549 438.549;"
+                        xml:space="preserve">
+                    <g>
+                        <path id="github" d="M409.132,114.573c-19.608-33.596-46.205-60.194-79.798-79.8C295.736,15.166,259.057,5.365,219.271,5.365
+                            c-39.781,0-76.472,9.804-110.063,29.408c-33.596,19.605-60.192,46.204-79.8,79.8C9.803,148.168,0,184.854,0,224.63
+                            c0,47.78,13.94,90.745,41.827,128.906c27.884,38.164,63.906,64.572,108.063,79.227c5.14,0.954,8.945,0.283,11.419-1.996
+                            c2.475-2.282,3.711-5.14,3.711-8.562c0-0.571-0.049-5.708-0.144-15.417c-0.098-9.709-0.144-18.179-0.144-25.406l-6.567,1.136
+                            c-4.187,0.767-9.469,1.092-15.846,1c-6.374-0.089-12.991-0.757-19.842-1.999c-6.854-1.231-13.229-4.086-19.13-8.559
+                            c-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559
+                            c-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-0.951-2.568-2.098-3.711-3.429c-1.142-1.331-1.997-2.663-2.568-3.997
+                            c-0.572-1.335-0.098-2.43,1.427-3.289c1.525-0.859,4.281-1.276,8.28-1.276l5.708,0.853c3.807,0.763,8.516,3.042,14.133,6.851
+                            c5.614,3.806,10.229,8.754,13.846,14.842c4.38,7.806,9.657,13.754,15.846,17.847c6.184,4.093,12.419,6.136,18.699,6.136
+                            c6.28,0,11.704-0.476,16.274-1.423c4.565-0.952,8.848-2.383,12.847-4.285c1.713-12.758,6.377-22.559,13.988-29.41
+                            c-10.848-1.14-20.601-2.857-29.264-5.14c-8.658-2.286-17.605-5.996-26.835-11.14c-9.235-5.137-16.896-11.516-22.985-19.126
+                            c-6.09-7.614-11.088-17.61-14.987-29.979c-3.901-12.374-5.852-26.648-5.852-42.826c0-23.035,7.52-42.637,22.557-58.817
+                            c-7.044-17.318-6.379-36.732,1.997-58.24c5.52-1.715,13.706-0.428,24.554,3.853c10.85,4.283,18.794,7.952,23.84,10.994
+                            c5.046,3.041,9.089,5.618,12.135,7.708c17.705-4.947,35.976-7.421,54.818-7.421s37.117,2.474,54.823,7.421l10.849-6.849
+                            c7.419-4.57,16.18-8.758,26.262-12.565c10.088-3.805,17.802-4.853,23.134-3.138c8.562,21.509,9.325,40.922,2.279,58.24
+                            c15.036,16.18,22.559,35.787,22.559,58.817c0,16.178-1.958,30.497-5.853,42.966c-3.9,12.471-8.941,22.457-15.125,29.979
+                            c-6.191,7.521-13.901,13.85-23.131,18.986c-9.232,5.14-18.182,8.85-26.84,11.136c-8.662,2.286-18.415,4.004-29.263,5.146
+                            c9.894,8.562,14.842,22.077,14.842,40.539v60.237c0,3.422,1.19,6.279,3.572,8.562c2.379,2.279,6.136,2.95,11.276,1.995
+                            c44.163-14.653,80.185-41.062,108.068-79.226c27.88-38.161,41.825-81.126,41.825-128.906
+                            C438.536,184.851,428.728,148.168,409.132,114.573z"/>
+                    </g>
+                    </svg>
+                    </a>
+                </li>
             </ul>
             <button class="toggle-menu">
                 <span></span>
             </button>
             <div id="menu" class="">
                 <nav class="main-nav">
-                 
+                    <ul>
+                        <li>
+                          <a href="#">
+                            About
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            Pricing
+                          </a>
+                        </li>
+                        
+                        <li>
+                          <a href="#">
+                            Contact
+                          </a>
+                        </li>
+                      </ul>
                 </nav>
                 <footer class="menu-footer">
                     <nav class="footer-nav">
@@ -96,6 +150,12 @@
     </header>
     <!-- div#title>h2 -->
     <div id="title">
+        <div class="title-box">
+            <div class="title-overlay">
+                <h2 class="h2">HANEUL'S</h2>
+                <h3 class="h4">Web Publisher Portfolio</h3>
+            </div>
+        </div>
         <!-- 타이틀 무비 & 이미지 -->
         <div class="fullscreen-bg">
             <div class="video-container">
@@ -127,7 +187,7 @@
                 <span class="sixty">Portfolio</span>
             </a>
             <a class="dot" href="#contect">
-                <span class="fifty">Contect</span>
+                <span class="sixty">Contect</span>
             </a>
         </div>
     </div>
@@ -137,7 +197,7 @@
         <section id="about" class="paddingT100 section">
             <div class="wrap padding50">
                 <figure>
-                    <img src="https://via.placeholder.com/340" alt="정면사진">
+                    <img src="https://via.placeholder.com/340" alt="박하늘의 프로필이미지 사진">
                     <figcaption class="hide">박하늘의 프로필이미지 사진</figcaption>
                 </figure>
                 <div class="hello">
@@ -168,247 +228,29 @@
         <section id="skill">
             <div class="wrap paddingT100 paddingB50">
                 <figure>
-                    <img src="" alt="책상과 노트북">
-                    <figcaption class="hide">책상과 노트북이 있는 사진</figcaption>
+                    <img src="" alt="책상이 있는 사진">
+                    <figcaption class="hide">책상이 있는 사진</figcaption>
                 </figure>    
                 <h2 class="h2">SKILL</h2>
                 <div class="ddtech">
-                    <h3 class="h3">Disgin Tech</h3>
-                    <ul class="list">
-                        <li>적절한 디자인 가이드를 세우고, 통일성 있고 일관적인 UI를 제작하여 빠른 피드백과 개발이 가능하도록 하는 것을 지향하고 있습니다.</li>
-                        <li>협업의 경험을 살려 여러 사람의 의견을 반영하고 더 나은 결과물을 만들기 위해 노력합니다.</li>
-                        <li>레이아웃 배치, 컬러 등 사용자 입장에서 최상의 경험을 할 수 있도록 하고, 불편함이 없도록 디자인하고자 노력합니다.</li>
-                        <li>Photoshop, Illustrator를 이용한 디자인 및 편집 작업이 가능합니다.</li>
-                        <li>XD, Figma를 이용한 UX/UI 설계와 프로토타이핑이 가능합니다.</li>
-                        <li>After effects를 이용한 모션그래픽 제작 및 영상 편집을 할 수 있습니다.</li>
-                    </ul>
-                    <ul class="progress">
-                        <!--  Item  -->
-                        <li data-name="Figma" data-percent="73%">
-                            <svg viewBox="-10 -10 220 220">
-                            <g fill="none" stroke-width="12" transform="translate(100,100)">
-                            <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
-                            <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)"/>
-                            <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)"/>
-                            <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)"/>
-                            <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)"/>
-                            <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)"/>
-                            </g>
-                            </svg>
-                            <svg viewBox="-10 -10 220 220">
-                            <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="459"></path>
-                            </svg>
-                        </li>
-                        <!--  Item  -->
-                        <li data-name="Phtoshop" data-percent="87%">
-                            <svg viewBox="-10 -10 220 220">
-                            <g fill="none" stroke-width="12" transform="translate(100,100)">
-                            <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
-                            <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)"/>
-                            <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)"/>
-                            <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)"/>
-                            <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)"/>
-                            <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)"/>
-                            </g>
-                            </svg>
-                            <svg viewBox="-10 -10 220 220">
-                            <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="547"></path>
-                            </svg>
-                        </li>
-                        <!--  Item  -->
-                        <li data-name="XD" data-percent="85%">
-                            <svg viewBox="-10 -10 220 220">
-                            <g fill="none" stroke-width="12" transform="translate(100,100)">
-                            <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
-                            <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)"/>
-                            <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)"/>
-                            <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)"/>
-                            <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)"/>
-                            <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)"/>
-                            </g>
-                            </svg>
-                            <svg viewBox="-10 -10 220 220">
-                            <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="535"></path>
-                            </svg>
-                        </li>
-                        <!--  Item  -->
-                        <li data-name="UI / UX" data-percent="97%">
-                            <svg viewBox="-10 -10 220 220">
-                            <g fill="none" stroke-width="12" transform="translate(100,100)">
-                            <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
-                            <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)"/>
-                            <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)"/>
-                            <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)"/>
-                            <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)"/>
-                            <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)"/>
-                            </g>
-                            </svg>
-                            <svg viewBox="-10 -10 220 220">
-                            <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="610"></path>
-                            </svg>
-                        </li>
-                        <li data-name="illustrator" data-percent="72%">
-                            <svg viewBox="-10 -10 220 220">
-                            <g fill="none" stroke-width="12" transform="translate(100,100)">
-                            <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
-                            <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)"/>
-                            <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)"/>
-                            <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)"/>
-                            <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)"/>
-                            <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)"/>
-                            </g>
-                            </svg>
-                            <svg viewBox="-10 -10 220 220">
-                            <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="452"></path>
-                            </svg>
-                        </li>
-                    </ul>
-                    <!--  Defining Angle Gradient Colors  -->
-                    <svg width="0" height="0">
-                        <defs>
-                        <linearGradient id="cl1" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1">
-                            <stop stop-color="#618099"/>
-                            <stop offset="100%" stop-color="#8e6677"/>
-                        </linearGradient>
-                        <linearGradient id="cl2" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="0" y2="1">
-                            <stop stop-color="#8e6677"/>
-                            <stop offset="100%" stop-color="#9b5e67"/>
-                        </linearGradient>
-                        <linearGradient id="cl3" gradientUnits="objectBoundingBox" x1="1" y1="0" x2="0" y2="1">
-                            <stop stop-color="#9b5e67"/>
-                            <stop offset="100%" stop-color="#9c787a"/>
-                        </linearGradient>
-                        <linearGradient id="cl4" gradientUnits="objectBoundingBox" x1="1" y1="1" x2="0" y2="0">
-                            <stop stop-color="#9c787a"/>
-                            <stop offset="100%" stop-color="#817a94"/>
-                        </linearGradient>
-                        <linearGradient id="cl5" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="0" y2="0">
-                            <stop stop-color="#817a94"/>
-                            <stop offset="100%" stop-color="#498a98"/>
-                        </linearGradient>
-                        <linearGradient id="cl6" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0">
-                            <stop stop-color="#498a98"/>
-                            <stop offset="100%" stop-color="#618099"/>
-                        </linearGradient>
-                        </defs>
-                        </svg>
+                    <div class="dgtech">
+                        <h3 class="h4">Disgin Tech</h3>
+                        <ul class="list">
+                            <li>적절한 디자인 가이드를 세우고, 통일성 있고 일관적인 UI를 제작하여 빠른 피드백과 개발이 가능하도록 하는 것을 지향하고 있습니다.</li>
+                            <li>협업의 경험을 살려 여러 사람의 의견을 반영하고 더 나은 결과물을 만들기 위해 노력합니다.</li>
+                            <li>레이아웃 배치, 컬러 등 사용자 입장에서 최상의 경험을 할 수 있도록 하고, 불편함이 없도록 디자인하고자 노력합니다.</li>
+                            <li>Photoshop, Illustrator를 이용한 디자인 및 편집 작업이 가능합니다.</li>
+                            <li>XD, Figma를 이용한 UX/UI 설계와 프로토타이핑이 가능합니다.</li>
+                            <li>After effects를 이용한 모션그래픽 제작 및 영상 편집을 할 수 있습니다.</li>
+                        </ul>
+                    </div>
                     <div class="ditech">
-                        <h3 class="h3">Develop Tech</h3>
+                        <h3 class="h4">Develop Tech</h3>
                         <ul class="list">
                             <li>재활용이나 유지보수가 쉬운 코드를 짤 수 있는지 항상 생각하고 노력합니다.</li>
                             <li>SEO 최적화를 위해 페이지 구조와 시멘틱 태그의 의미를 고려하며 마크업을 하고자 하며 웹 표준과 웹 접근성 준수합니다</li>
                             <li>CSS, SCSS 등을 통해 디자인 결과물과 흡사하게 웹에 구현해 낼 수 있으며 반응형 웹 퍼블리싱이 가능합니다.</li>
                         </ul>
-                        <ul class="progress">
-                            <!--  Item  -->
-                            <li data-name="CSS3" data-percent="93%">
-                                <svg viewBox="-10 -10 220 220">
-                                <g fill="none" stroke-width="12" transform="translate(100,100)">
-                                <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
-                                <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)"/>
-                                <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)"/>
-                                <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)"/>
-                                <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)"/>
-                                <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)"/>
-                                </g>
-                                </svg>
-                                <svg viewBox="-10 -10 220 220">
-                                <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="585"></path>
-                                </svg>
-                            </li>
-                            <!--  Item  -->
-                            <li data-name="SCSS" data-percent="95%">
-                                <svg viewBox="-10 -10 220 220">
-                                <g fill="none" stroke-width="12" transform="translate(100,100)">
-                                <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
-                                <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)"/>
-                                <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)"/>
-                                <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)"/>
-                                <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)"/>
-                                <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)"/>
-                                </g>
-                                </svg>
-                                <svg viewBox="-10 -10 220 220">
-                                <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="598"></path>
-                                </svg>
-                            </li>
-                            <!--  Item  -->
-                            <li data-name="Javascript" data-percent="84%">
-                                <svg viewBox="-10 -10 220 220">
-                                <g fill="none" stroke-width="12" transform="translate(100,100)">
-                                <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
-                                <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)"/>
-                                <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)"/>
-                                <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)"/>
-                                <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)"/>
-                                <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)"/>
-                                </g>
-                                </svg>
-                                <svg viewBox="-10 -10 220 220">
-                                <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="528"></path>
-                                </svg>
-                            </li>
-                            <!--  Item  -->
-                            <li data-name="JQuery" data-percent="87%">
-                                <svg viewBox="-10 -10 220 220">
-                                <g fill="none" stroke-width="12" transform="translate(100,100)">
-                                <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
-                                <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)"/>
-                                <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)"/>
-                                <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)"/>
-                                <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)"/>
-                                <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)"/>
-                                </g>
-                                </svg>
-                                <svg viewBox="-10 -10 220 220">
-                                <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="547"></path>
-                                </svg>
-                            </li>
-                            <li data-name="Vue.js" data-percent="82%">
-                                <svg viewBox="-10 -10 220 220">
-                                <g fill="none" stroke-width="12" transform="translate(100,100)">
-                                <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
-                                <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)"/>
-                                <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)"/>
-                                <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)"/>
-                                <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)"/>
-                                <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)"/>
-                                </g>
-                                </svg>
-                                <svg viewBox="-10 -10 220 220">
-                                <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="516"></path>
-                                </svg>
-                            </li>
-                        </ul>
-                        <!--  Defining Angle Gradient Colors  -->
-                        <svg width="0" height="0">
-                            <defs>
-                            <linearGradient id="cl1" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1">
-                                <stop stop-color="#618099"/>
-                                <stop offset="100%" stop-color="#8e6677"/>
-                            </linearGradient>
-                            <linearGradient id="cl2" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="0" y2="1">
-                                <stop stop-color="#8e6677"/>
-                                <stop offset="100%" stop-color="#9b5e67"/>
-                            </linearGradient>
-                            <linearGradient id="cl3" gradientUnits="objectBoundingBox" x1="1" y1="0" x2="0" y2="1">
-                                <stop stop-color="#9b5e67"/>
-                                <stop offset="100%" stop-color="#9c787a"/>
-                            </linearGradient>
-                            <linearGradient id="cl4" gradientUnits="objectBoundingBox" x1="1" y1="1" x2="0" y2="0">
-                                <stop stop-color="#9c787a"/>
-                                <stop offset="100%" stop-color="#817a94"/>
-                            </linearGradient>
-                            <linearGradient id="cl5" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="0" y2="0">
-                                <stop stop-color="#817a94"/>
-                                <stop offset="100%" stop-color="#498a98"/>
-                            </linearGradient>
-                            <linearGradient id="cl6" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0">
-                                <stop stop-color="#498a98"/>
-                                <stop offset="100%" stop-color="#618099"/>
-                            </linearGradient>
-                            </defs>
-                            </svg>
                     </div>
                 </div>    
             </div>
@@ -432,8 +274,8 @@
                             <div class="pftitle">
                                 <a class="pfh" href="">
                                     <div>
-                                        <h3 class="h3">한국 알콜산업</h3>
-                                        <h4 class="h4">기업 사이트 제작</h4>
+                                        <h3 class="h4">한국 알콜산업</h3>
+                                        <h4 class="h5">기업 사이트 제작</h4>
                                     </div>
                                     <ul class="hashtag">
                                         <li class="p"><span class="">#PC</span</li>
@@ -441,7 +283,7 @@
                                         <li class="p"><span class="">#UI 리뉴얼</span></li>
                                         <li class="p"><span class="">#제작 100%</span></li>
                                     </ul>
-                                    <a class="more" href=""><span class="h5">상세보기</span</a>
+                                    <a class="more" href=""><span class="h6">상세보기</span</a>
                                 </a>
                             </div>
                         </div>
@@ -454,8 +296,8 @@
                             <div class="pftitle">
                                 <a class="pfh" href="">
                                     <div>
-                                        <h3 class="h3">CGV</h3>
-                                        <h4 class="h4">기업 사이트 제작</h4>
+                                        <h3 class="h4">CGV</h3>
+                                        <h4 class="h5">기업 사이트 제작</h4>
                                     </div>
                                     <ul class="hashtag">
                                         <li class="p"><span class="">#PC</span</li>
@@ -463,7 +305,7 @@
                                         <li class="p"><span class="">UI 리뉴얼</span></li>
                                         <li class="p"><span class="">#제작 100%</span></li>
                                     </ul>
-                                    <a class="more" href=""><span class="h5">상세보기</span</a>
+                                    <a class="more" href=""><span class="h6">상세보기</span</a>
                                 </a>
                             </div>
                         </div>
@@ -476,15 +318,15 @@
                             <div class="pftitle">
                                 <a class="pfh" href="">
                                     <div>
-                                        <h3 class="h3">제이쿼리</h3>
-                                        <h4 class="h4">제이쿼리 스킬사용 예시사이트</h4>
+                                        <h3 class="h4">제이쿼리</h3>
+                                        <h4 class="h5">제이쿼리 스킬사용 예시사이트</h4>
                                     </div>
                                     <ul class="hashtag">
                                         <li class="p"><span class="">#CSS</span</li>
                                         <li class="p"><span class="">#Jquery</span></li>
                                         <li class="p"><span class="">#제작 100%</span></li>
                                     </ul>
-                                    <a class="more" href=""><span class="h5">상세보기</span</a>
+                                    <a class="more" href=""><span class="h6">상세보기</span</a>
                                 </a>
                             </div>
                         </div>
@@ -498,10 +340,10 @@
                 <h2 class="h2 hide">CONTECT</h2>
                 <div class="ctbox">
                     <div class="ctimg">
-                        <img src="https://via.placeholder.com/340" alt="프로필이미지">
+                        <img src="https://via.placeholder.com/340" alt="하늘의 프로필이미지">
                     </div>
                     <div class="ctinfo">
-                        <h3 class="h3">여기다가 써야할거<span class="block">요기다가 써야할거</span></h3>
+                        <h3 class="h4">여기다가 써야할거<span class="block">요기다가 써야할거</span></h3>
                         <div class="ctinfop">
                             <p class="p">저는 얼마전까지 일반적인 사용자의 입장이었던 만큼 어느 웹사이트를 이용해도 별 다른
                                 </br>차이점이나 사용자 경험으로써의 기억이 남는 웹페이지는 없었다고 생각합니다

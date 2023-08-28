@@ -1,6 +1,7 @@
 /* 공통스타일 class */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css");
 body{
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Pretendard', sans-serif;
 }
 .width-full{
   width: auto;
@@ -75,22 +76,31 @@ body{
   text-align: center;
 }
 .h1{
-  font-size: 55px; 
+  font-size: 120px; 
 }
 .h2{
-  font-size: 48px;
+  font-size: 100px;
+  font-weight: lighter;
+  text-shadow: #0acdce 1px 0 10px;
 }
 .h3{
-  font-size: 30px; 
+  font-size: 48px;
+  text-shadow: #0acdce 0px 0px 10px;
+  font-weight: lighter;
 }
 .h4{
-  font-size: 20px;
+  font-size: 36px; 
+  font-weight: lighter;
 }
 .h5{
+  font-size: 20px;
+}
+.h6{
   font-size: 18px; 
 }
 .p{
   font-size: 14px;  
+  font-weight: lighter;
 }
 .block{
   display: block;

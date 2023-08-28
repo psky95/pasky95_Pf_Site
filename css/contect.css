@@ -4,7 +4,7 @@ section#contect {
 }
 section#contect div.wrap {  
   padding-top: 250px;
-  padding-bottom: 300px;
+  padding-bottom: 305px;
 }
 section#contect div.wrap h2 {
   
@@ -29,6 +29,7 @@ section#contect div.wrap div.ctbox div.ctinfo {
 }
 section#contect div.wrap div.ctbox div.ctinfo h3 {
   
+  font-weight: normal;
 }
 section#contect div.wrap div.ctbox div.ctinfop{
   height: 100%;

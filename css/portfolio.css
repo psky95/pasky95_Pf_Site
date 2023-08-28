@@ -22,14 +22,13 @@
 }
 #portfolio .wrap .pfpackage div.pftitle > a.pfh >div h4 {
   
-  margin-top: 10px;
   color: #aeaeae;
-  font-weight: 400;
+  font-weight: lighter;
 }
 #portfolio .wrap .pfpackage div.pftitle > a.pfh ul.hashtag {
   display: flex;
   gap: 15px;
-  margin-top: 25px;
+  margin-top: 20px;
 }
 #portfolio .wrap .pfpackage div.pftitle > a.pfh ul.hashtag li {
   
@@ -59,7 +58,6 @@
 }
 #portfolio .wrap .pfpackage div.pftitle > a.more span{  
   color: #0ac7c8;
-  font-weight: 600;
 }
 #portfolio .wrap .pfpackage div.pftitle > a.more:hover span{  
   color: rgb(34, 34, 34);
@@ -69,11 +67,10 @@
   background-color: #222;
 }
 #portfolio .wrap {  
-  padding-top: 200px;
-  padding-bottom: 300px;
+  padding-top: 210px;
+  padding-bottom: 210px;
 }
 #portfolio .wrap h2.h2{ 
-  text-shadow: #FFF 1px 0 10px;
 }
 #portfolio .wrap .contentslide{
   
