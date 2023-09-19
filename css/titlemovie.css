@@ -38,11 +38,3 @@ body, html {
     height: 100%;
     object-fit: fill;
 }
-.fullscreen-bg__image {
-     /* 이미지와 동영상을 스크린 블렌딩 모드로 겹쳐 보이게 했음 */
-    background-image: url(../img/tmuje4.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    mix-blend-mode: color-dodge;
-}

@@ -4,7 +4,7 @@
   display: flex;
   height: 330px;
 }
-#portfolio .wrap .pfpackage article {
+#portfolio .wrap .pfpackage a.imgbox {
   
   width: calc(100% / 2);
 }
@@ -48,18 +48,19 @@
 }
 #portfolio .wrap .pfpackage div.pftitle > a.pfh ul.hashtag li span{
   
-  color: #0ac7c8;
+  color: rgb(10, 205, 206);
 }
-#portfolio .wrap div.pfbox1 div.pftitle > a.more {
+#portfolio .wrap div.pfbox1 div.pftitle > .more {
 
 }
-#portfolio .wrap .pfpackage div.pftitle > a.more:hover{
+#portfolio .wrap .pfpackage div.pftitle > .more:hover{
   background-color: rgb(10, 205, 206);
 }
-#portfolio .wrap .pfpackage div.pftitle > a.more span{  
-  color: #0ac7c8;
+#portfolio .wrap .pfpackage div.pftitle > .more span{  
+  font-weight: 600;
+  color: rgb(10, 205, 206);
 }
-#portfolio .wrap .pfpackage div.pftitle > a.more:hover span{  
+#portfolio .wrap .pfpackage div.pftitle > .more:hover span{  
   color: rgb(34, 34, 34);
 }
 /* 포트폴리오 영역 */
@@ -79,9 +80,8 @@
   
   padding: 50px 0;
 }
-#portfolio .wrap div.pfbox1 article.pfimg1 > a {
+#portfolio .wrap div.pfbox1 article.pfimg1 > img {
   
-  background-image: url(../img/port1.png);
 }
 #portfolio .wrap div.pfbox1 div.pftitle > div.pfh {
   
@@ -93,14 +93,12 @@
 
 
 /* pfbox2 영역 */
-#portfolio .wrap div.pfbox2 article.pfimg2 > a {
+#portfolio .wrap div.pfbox2 article.pfimg2 > img {
   
-  background-image: url(../img/port2.png);
 }
 /* pfbox3 영역 */
-#portfolio .wrap div.pfbox3 article.pfimg3 > a {
-  
-  background-image: url(../img/port3.png);
+#portfolio .wrap div.pfbox3 article.pfimg3 > img {
+
   background-size: inherit;
 }
 /* 변경된 코드 */

@@ -172,9 +172,7 @@ div#title .scrollerspan{
   /*! padding: 0 0 80px 0; */
 }
 #skill .wrap figure img{
-  
   border-radius: 15px;
-  background-image: url(../img/stackimg.jpg);
   background-repeat: no-repeat;
   display: block;
   height: 300px;

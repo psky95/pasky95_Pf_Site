@@ -54,8 +54,8 @@ section#contect div.wrap a.more:hover{
   background-color: rgb(10, 205, 206);
 }
 section#contect div.wrap a.more span{  
-  color: #0ac7c8;
   font-weight: 600;
+  color: rgb(10, 205, 206);
 }
 section#contect div.wrap a.more:hover span{
   color: rgb(34, 34, 34);
