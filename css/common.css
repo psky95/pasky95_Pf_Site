@@ -105,9 +105,14 @@ body{
 .h8{
   font-size: 1.6rem;
 }
+.h9{
+  font-size: 1.5rem;
+}
 .p{
-  font-size: 14px;  
-  font-weight: lighter;
+  font-size: 1.4rem;  
+}
+.p2{
+  font-size: 1.2rem;
 }
 .block{
   display: block;
@@ -120,6 +125,21 @@ border: none;
 box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
 font-size: 0;
 }
+/* 포폴 영역 전용 버튼 */
+.button-more{ 
+  border: 0px solid rgba(10, 205, 206);
+  border-radius: 30px;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(10, 205, 206, 0.75);
+  cursor: pointer;
+  font-weight: 600;
+}
+/* 포폴 영역 제외한 버튼 */
 .more{ 
   border: 0px solid rgba(10, 205, 206, 0.25);
   border-radius: 30px;
