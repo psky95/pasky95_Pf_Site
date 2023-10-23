@@ -1,0 +1,72 @@
+section#contact {
+  background-color: #1d1d1d;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  min-height: 88rem;
+}
+section#contact div.wrap {  
+}
+section#contact div.wrap h2 {
+  
+}
+section#contact div.wrap div.ctbox {
+  
+  display: flex;
+}
+section#contact div.wrap div.ctbox div.ctimg {
+  
+  width: calc(100% - 65%);
+}
+section#contact div.wrap div.ctbox div.ctimg img {
+  
+}
+section#contact div.wrap div.ctbox div.ctinfo {
+  
+  width: calc(100% - 35%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+section#contact div.wrap div.ctbox div.ctinfo h3 {
+  
+  font-weight: 600;
+  line-height: 1.2;
+}
+section#contact div.wrap div.ctbox div.ctinfop{
+  height: 100%;
+  margin-top: 2.4rem;
+}
+section#contact div.wrap div.ctbox div.ctinfop2{
+  
+}
+section#contact div.wrap div.ctbox div.ctinfop p {
+  
+  color: #ccc;
+  line-height: 1.8;
+}
+section#contact div.wrap div.ctbox div.ctinfop p span{
+  
+  color: rgb(10, 205, 206);
+}
+section#contact div.wrap div.ctbox div.ctinfo div.ctsitego {
+  
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  margin-top: 8rem;
+}
+section#contact div.wrap div.ctbox div.ctinfo div.ctsitego button {
+  background: transparent;
+  border: none;
+}
+section#contact div.wrap a.more:hover{
+  background-color: rgb(10, 205, 206);
+}
+section#contact div.wrap a.more span{  
+  font-weight: 600;
+  color: rgb(10, 205, 206);
+}
+section#contact div.wrap a.more:hover span{
+  color: rgb(34, 34, 34);
+}

@@ -37,9 +37,8 @@ header:hover{
 header .wrap{
   display: flex;
   justify-content: space-between;
-  height: 70px;
+  height: 7rem;
   align-items: center;
-  /*! padding-top: 20px; */
 }
 
 header>div> h1{
@@ -49,7 +48,7 @@ header>div> h1{
 header>div> h1 a{
   
   font-weight: 600;
-  font-size: 24px;
+  font-size: 2rem;
 }
 
 header>div> a{
@@ -59,13 +58,10 @@ header>div> a{
 header>div>ul{
   height: 100%;
   display: flex;
-  gap: 25px;
+  gap: 2.5rem;
   font-size: 2.2rem;
   font-weight: bold;
   align-items: center;
-}
-header div ul.gnb li:nth-child(1) .logohover:hover{
-
 }
 
 header div ul.gnb li .logohover img{
@@ -73,28 +69,28 @@ header div ul.gnb li .logohover img{
 }
 header div ul.gnb li .logohover{
 }
-header div ul.gnb li .logohover svg{
-  
+header div ul.gnb li .logohover svg{ 
   fill: white;
 }
 div#title{
-
   width: 100%;
   height: 100%;
   position: relative;
+  min-height: 88rem;
 }
 
 div#title .title-box{
   position: absolute;
   top: 35%;
-  left: calc(50% - 223px);
+  left: calc(50% - 214.5px);
   text-align: center;
 }
+
 div#title .title-box .title-overlay{
   
 }
-div#title .title-box .title-overlay h2{
-  
+
+div#title .title-box .title-overlay h2{ 
   line-height: 1.2;
   font-weight: 800;
 }
@@ -102,8 +98,7 @@ div#title .title-box .title-overlay h3{
   
 }
 
-div#container{
-  
+div#container{ 
   overflow: hidden;
   line-height: 0;
 }
@@ -112,27 +107,28 @@ div#container{
 /* 타이틀 마우스 스크롤 */
 div#title .scroll-downs {
   position: absolute;
-  top: 120px;
+  top: 1.2rem;
   right: 0;
-  bottom: -610px;
-  left: 0;
+  bottom: -60rem;
+  left: -8.5px;
   margin: auto;
-  
-  width :34px;
-  height: 55px;
+  width :3.4rem;
+  height: 5.5rem;
 }
+
 div#title .mousey {
   width: 3px;
-  padding: 10px 15px;
-  height: 35px;
+  padding: 1rem 1.5rem;
+  height: 3.5rem;
   border: 2px solid #fff;
-  border-radius: 25px;
+  border-radius: 2.5rem;
   opacity: 0.75;
   box-sizing: content-box;
 }
+
 div#title .scroller {
   width: 3px;
-  height: 10px;
+  height: 1rem;
   border-radius: 25%;
   background-color: #fff;
   animation-name: scroll;
@@ -140,115 +136,20 @@ div#title .scroller {
   animation-timing-function: cubic-bezier(.15,.41,.69,.94);
   animation-iteration-count: infinite;
 }
-div#title .scrollerspan{
-  
-  width: 90px;
-  height: 20px;
+
+div#title .scrollerspan{ 
+  width: 9rem;
+  height: 2rem;
   display: inline-block;
-  font-size: 16px;
+  font-size: 1.6rem;
   color: rgb(204, 204, 204);
-  left: -20px;
+  left: -2rem;
   position: absolute;
-  top: 70px;
+  top: 7rem;
 }
+
 @keyframes scroll {
   0% { opacity: 0; }
   10% { transform: translateY(0); opacity: 1; }
   100% { transform: translateY(15px); opacity: 0;}
 }
-
-
-/*  구분선  */
-
-/* 스킬영역 */
-#skill{
-  
-  background-color: #1d1d1d;
-}
-#skill .wrap{ 
-  position: relative;
-}
-#skill .wrap figure{  
-  /*! padding: 0 0 80px 0; */
-}
-#skill .wrap figure img{
-  border-radius: 15px;
-  background-repeat: no-repeat;
-  display: block;
-  height: 300px;
-  filter: contrast(0.5) grayscale(1) brightness(0.55);
-  font-size: 0;
-}
-#skill .wrap figcaption{
-  
-}
-#skill .wrap h2{
-  transform: translateY(-90px);
-}
-#skill .wrap div.ddtech{
-  
-  padding-left: 30px;
-  box-sizing: border-box;
-}
-#skill .wrap div.dgtech{
-  
-  padding: 50px 0;
-}
-#skill .wrap div.ditech{
-  
-}
-#skill .wrap div h3{
-  
-  padding-bottom: 20px;
-}
-#skill .wrap div ul{
-  
-}
-#skill .wrap div ul.list{
-  padding-bottom: 10px;
-  font-weight: normal;
-}
-#skill .wrap div ul.list li{
-  max-width: 100%;
-  margin-left: 20px;
-  line-height: 2;
-}
-#skill .wrap div ul.list li::marker{
-  color: #0acdce;
-}
-#skill .wrap div h4{
-  
-  font-size: 2.8rem;
-  padding: 100px 0 50px 0;
-}
-#skill .wrap div .hashtag{
-  
-  display: flex;
-  gap: 20px;
-  margin-top: 30px;
-}
-#skill .wrap div .hashtag >li{
-  border-radius: 10rem;
-  border: 1px solid #0acdce;
-  font-size: 1.4rem;
-  padding: 10px 15px;
-  color: #0acdce;
-  width: auto;
-}
-#skill .wrap div .list >li{
-  list-style-type: disc;
-  line-height: 1.6;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,129 +1,103 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:100,400);
-@-webkit-keyframes load {
-  0% {
-    stroke-dashoffset: 0;
+/* 스킬영역 */
+#skill{
+    background-color: #1d1d1d;
+    height: 100%;
+    min-height: 88rem;
+}
+  
+#skill .wrap{ 
+    position: relative;
+}
+  
+  #skill .wrap figure{  
   }
+  
+#skill .wrap figure img{
+    border-radius: 1.5rem;
+    background-repeat: no-repeat;
+    display: block;
+    filter: contrast(0.7) grayscale(0.4) brightness(0.3);
+    font-size: 0;
 }
-@keyframes load {
-  0% {
-    stroke-dashoffset: 0;
-  }
-}
-.progress {
-  position: relative;
-  display: inline-block;
-  padding: 0;
-  text-align: center;
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 60px;
-}
-.progress > li {
-  display: inline-block;
-  position: relative;
-  text-align: center;
-  color: #93A2AC;
-  font-family: Lato;
-  font-weight: 500;
-  margin: 2rem;
-  font-size: 18px;
-}
-.progress > li:before {
-  content: attr(data-name);
-  position: absolute;
-  width: 100%;
-  bottom: -2.5rem;
-  font-weight: 400;
-}
-.progress > li:after {
-  content: attr(data-percent); /* attr(속성명)은 속성의 값을 가져오는 명령  */
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  font-size: 2rem;
-  text-align: center;
-  height: 100%;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-.progress svg {
-  width: 8rem;
-  height: 8rem;
-}
-.progress svg:nth-child(2) {
-  position: absolute;
-  left: 0;
-  top: 0;
-  transform: rotate(-90deg);
-}
-.progress svg:nth-child(2) path {
-  fill: none;
-  stroke-width: 25;
-  stroke-dasharray: 629;
-  stroke: #1d1d1d;
-  opacity: 0.9;
-  -webkit-animation: load 3s;
+  
+#skill .wrap figcaption{
+    
 }
 
-
-
-/*ditech 부분의 skill css */
-div.ditech> .progress {
-  position: relative;
-  display: inline-block;
-  padding: 0;
-  text-align: center;
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 60px;
+#skill .wrap h2{
+    transform: translateY(-8rem);
 }
-div.ditech> .progress > li {
-  display: inline-block;
-  position: relative;
-  text-align: center;
-  color: #93A2AC;
-  font-family: Lato;
-  font-weight: 500;
-  margin: 2rem;
-  font-size: 18px;
+  
+#skill .wrap div.ddtech{
+    box-sizing: border-box;
+    transform: translateY(-2.5rem);
 }
-div.ditech> .progress > li:before {
-  content: attr(data-name);
-  position: absolute;
-  width: 100%;
-  bottom: -2.5rem;
-  font-weight: 400;
+  
+#skill .wrap div.dgtech{ 
+    padding: 5rem 0;
 }
-div.ditech> .progress > li:after {
-  content: attr(data-percent); /* attr(속성명)은 속성의 값을 가져오는 명령  */
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  font-size: 2rem;
-  text-align: center;
-  height: 100%;
-  align-items: center;
-  display: flex;
-  justify-content: center;
+  
+#skill .wrap div.ditech{
+    
 }
-div.ditech> .progress svg {
-  width: 8rem;
-  height: 8rem;
+  
+#skill .wrap div h3{  
+    padding-bottom: 2rem;
+    color: #ccc;
+    font-weight: 700;
 }
-div.ditech> .progress svg:nth-child(2) {
-  position: absolute;
-  left: 0;
-  top: 0;
-  transform: rotate(-90deg);
+  
+#skill .wrap div ul{
+    
 }
-div.ditech> .progress svg:nth-child(2) path {
-  fill: none;
-  stroke-width: 25;
-  stroke-dasharray: 629;
-  stroke: #1d1d1d;
-  opacity: 0.9;
-  -webkit-animation: load 3s;
+  
+#skill .wrap div ul.list li{
+    max-width: 100%;
+    margin-left: 3rem;
+    line-height: 2;
+    color: #ccc;
+}
+  
+#skill .wrap div ul.list li::marker{
+    color: rgba(10, 205, 206, 0.5);
+}
+  
+#skill .wrap div h4{
+    font-size: 2.8rem;
+    padding: 10rem 0 5rem 0;
+}
+  
+#skill .wrap div .hashtag{ 
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+  
+#skill .wrap div .hashtag >li{
+    border-radius: 10rem;
+    border: 1px solid #0acdce;
+    font-size: 1.4rem;
+    padding: 1rem 1.5rem;
+    color: #0acdce;
+    width: auto;
+}
+  
+#skill .wrap div .list >li{
+    list-style-type: disc;
+    line-height: 1.6;
+}
+  
+#skill .wrap div ul.list2{ 
+    display: flex;
+    margin-top: 1.4rem;
+    gap: 0.8rem;
+}
+  
+#skill .wrap div ul.list2 li{
+    padding: 0.4rem 1.2rem;
+    color: rgb(10, 205, 206);
+    font-size: 1.4rem;
+    border: 0.2rem solid rgba(10, 205, 206, 0.25);
+    border-radius: 10rem;
+    line-height: 1.5;
 }

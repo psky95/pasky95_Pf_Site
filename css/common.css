@@ -10,17 +10,17 @@ body{
   height: 100%
 }
 .wrap{
-  max-width: 1200px;
+  max-width: 120rem;
   margin: 0 auto;
 }
 .hide{
   display: none; /* 안보이게 */
 }
 .rbox{
-  width: 300px;
-  height: 300px;
+  width: 30rem;
+  height: 30rem;
   background-color: #eee;
-  border-radius: 20px;
+  border-radius: 2rem;
   text-align: center;
 }
 .bgimg{
@@ -30,32 +30,32 @@ body{
   background-position-y: 10%;
 }
 .padding50{
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 .paddingB50{
-  padding-bottom: 50px;
+  padding-bottom: 5rem;
 }
 .paddingB100{
-  padding-bottom: 100px;
+  padding-bottom: 10rem;
 }
 .paddingT50{
-  padding-top: 50px;
+  padding-top: 5rem;
 }
 .paddingT100{
-  padding-top: 100px;
+  padding-top: 10rem;
 }
 .marginB50{
-  margin-bottom: 50px;
+  margin-bottom: 5rem;
 }
 .marginB100{
-  margin-bottom: 100px;
+  margin-bottom: 10rem;
 }
 .marginT50{
-  margin-top: 50px;
+  margin-top: 5rem;
 }
 .marginT100{
-  margin-top: 100px;
+  margin-top: 10rem;
 }
 .flex{
   display: flex;
@@ -79,7 +79,7 @@ body{
   font-size: 12rem; 
 }
 .h2{
-  font-size: 10rem;
+  font-size: 9rem;
   font-weight: lighter;
   text-shadow: #0acdce 1px 0 10px;
 }
@@ -100,7 +100,6 @@ body{
 }
 .h7{
   font-size: 1.7rem;
-  font-weight: 300;
 }
 .h8{
   font-size: 1.6rem;
@@ -118,33 +117,18 @@ body{
   display: block;
 }
 .button{
-width: 35px;
-height: 35px;
+width: 3.5rem;
+height: 3.5rem;
 border-radius: 50%;
 border: none;
 box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
 font-size: 0;
 }
-/* 포폴 영역 전용 버튼 */
-.button-more{ 
-  border: 0px solid rgba(10, 205, 206);
-  border-radius: 30px;
-  width: 100px;
-  height: 40px;
-  text-align: center;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  background-color: rgba(10, 205, 206, 0.75);
-  cursor: pointer;
-  font-weight: 600;
-}
-/* 포폴 영역 제외한 버튼 */
 .more{ 
   border: 0px solid rgba(10, 205, 206, 0.25);
-  border-radius: 30px;
-  width: 180px;
-  height: 55px;
+  border-radius: 3rem;
+  width: 18rem;
+  height: 5.5rem;
   text-align: center;
   align-items: center;
   display: flex;
@@ -162,11 +146,7 @@ font-size: 0;
   box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.2);
   padding-left: 10px;
 }
-.spshow{
-  display: block;
-}
 .fullscreen-bg__image {
-  /* 이미지와 동영상을 스크린 블렌딩 모드로 겹쳐 보이게 */
  background-repeat: no-repeat;
  background-position: center;
  background-size: cover;

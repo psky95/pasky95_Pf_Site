@@ -1,119 +1,134 @@
 /* 포트폴리오 공통 스타일 */
-#portfolio .wrap .pf-flex{
+#portfolio .wrap .pfpackage> div:nth-of-type(1) {
   display: flex;
 }
-#pf-box{
-  height: auto;
-  width: calc(100% / 3);
+
+#portfolio .wrap .pfpackage a.imgbox {
+  width: calc(100% / 2);
 }
-#pf-box:hover #pf-title{
+#portfolio .wrap .pfpackage a.imgbox img{
   
-  background: black;
-  opacity: 0.8;
-  display: flex;
-  flex-direction: column;
-  padding: 30px 30px 30px 30px;
+  height: 280px;
+}
+
+#portfolio .wrap .pfpackage div.pftitle { 
+  width: calc(100% / 2);
+  padding: 0px 0 1.5rem 5rem;
   box-sizing: border-box;
-  border-radius: 10px;
 }
-#pf-box .img-box{
-  
-  height: 100%;
-}
-#pf-title{  
-  background: black;
-  opacity: 0.8;
-  display: flex;
-  flex-direction: column;
-  padding: 30px 30px 30px 30px;
-  box-sizing: border-box;
-  border-radius: 10px;
-  display: none;
-}
-#pf-title .pfh{
-  
-  margin-bottom: 10px;
-}
-#pf-title .pfh h3{
-  line-height: 1.6;
-}
-#pf-title ul.hashtag {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 25px;
-}
-#pf-title ul.hashtag li {
-  border: 2px solid rgba(10, 205, 206, 0.4);
-  padding: 4px 10px;
-  border-radius: 1.3rem;
-}
-#pf-title ul.hashtag li span{ 
-  color: rgba(10, 205, 206, 1);
-}
-#pf-title .button-flex{
-  display: flex;
-  gap: 20px;
-}
-#pf-title .button-more:hover{
-  background-color: rgb(10, 205, 206);
-}
-#pf-title .button-more span{  
-  /*! color: rgb(10, 205, 206); */
-  font-weight: 600;
-}
-#pf-title .button-more:hover span{  
-  color: rgb(34, 34, 34);
-}
-#portfolio .wrap .img-box img{
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-}
-/* 포폴1 */
-.pf-box1{
-  position: relative;
-}
-#pf-box .pf-title1{
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-#pf-box .pf-img1{
+
+#portfolio .wrap .pfpackage div.pftitle .pfh{
   
 }
 
+#portfolio .wrap .pfpackage div.pftitle > a.pfh >div h3 {
+  line-height: 1.6;
+  font-weight: 400;
+  color: #eee;
+}
+
+#portfolio .wrap .pfpackage div.pftitle > a.pfh >div h4 {
+  color: #aeaeae;
+  font-weight: lighter;
+}
+
+#portfolio .wrap .pfpackage div.pftitle > a.pfh ul.hashtag {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+#portfolio .wrap .pfpackage div.pftitle > a.pfh ul.hashtag li {
+  border: 2px solid rgba(10, 205, 206, 0.25);
+  padding: 0.7rem 1.2rem;
+  border-radius: 1.3rem;
+}
+
+#portfolio .wrap .pfpackage div.pftitle > a.pfh ul.hashtag li span{
+  color: rgb(10, 205, 206);
+}
+
+#portfolio .wrap div.pfbox1 div.pftitle > .more {
+
+}
+
+#portfolio .wrap .pfpackage div.pftitle > .more:hover{
+  background-color: rgb(10, 205, 206);
+}
+
+#portfolio .wrap .pfpackage div.pftitle > .more span{  
+  font-weight: 600;
+  color: rgb(10, 205, 206);
+}
+
+#portfolio .wrap .pfpackage div.pftitle > .more:hover span{  
+  color: rgb(34, 34, 34);
+}
 /* 포트폴리오 영역 */
 #portfolio {
   background-color: #222;
-}
-#portfolio .wrap {  
-  padding-top: 210px;
-  padding-bottom: 210px;
-}
-#portfolio .wrap .ptflex{
+  height: 100%;
+  min-height: 88rem;
   display: flex;
-  gap: 30px;
+}
+
+#portfolio .wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#portfolio .wrap h2.h2{ 
+}
+
+#portfolio .wrap .contentslide{
+  
+}
+
+#portfolio .wrap .pfpackage{ 
+  padding: 50px 0;
 }
 /* 변경된 코드 */
-#portfolio .wrap .pfpackage div.pftitle1 > div h3 { 
+#portfolio .wrap .pfpackage div.pftitle > div.pfh >div h3 { 
   line-height: 1.6;
 }
-#portfolio .wrap .pfpackage div.pftitle1 > div h4 {
-  
-  margin-top: 10px;
+
+#portfolio .wrap .pfpackage div.pftitle > div.pfh >div h4 {
+  margin-top: 1rem;
   color: #aeaeae;
   font-weight: 400;
 }
 #portfolio .wrap .pfpackage div.pftitle > div.pfh ul.hashtag {
   display: flex;
-  gap: 15px;
-  margin-top: 25px;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
 }
-#portfolio .wrap .pfpackage div.pftitle1 ul.hashtag li span{
+
+#portfolio .wrap .pfpackage div.pftitle > div.pfh ul.hashtag li {
+  border: 2px solid rgba(10, 205, 206, 0.25);
+  padding: 0.7rem 1.2rem;
+  border-radius: 1.3rem;
+}
+#portfolio .wrap .pfpackage div.pftitle > div.pfh ul.hashtag li span{ 
   color: #0ac7c8;
 }
-#portfolio .wrap div.pfbox1 div.pftitle > div.more {
 
+#portfolio .wrap .pfpackage div.pftitle .button-flex{
+  display: flex;
+  margin-top: 9.7rem;
+  gap: 2rem;
+}
+
+#portfolio .wrap .pfpackage div.pftitle div .more span{
+  color: #0ac7c8;
+  font-weight: 600;
+}
+
+#portfolio .wrap .pfpackage div.pftitle div .more:hover span{  
+  color: rgb(34, 34, 34);
+}
+
+#portfolio .wrap .pfpackage div.pftitle div .more:hover{
+  background-color: rgb(10, 205, 206);
 }
