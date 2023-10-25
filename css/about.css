@@ -20,10 +20,10 @@
   
   width: calc(100% - 65%);
 }
-#about .wrap figure
   
 #about .wrap figure img {
   padding-right: 40px;
+  filter: contrast(1) grayscale(1) brightness(0.7);
 }
   
 #about .wrap div.about {

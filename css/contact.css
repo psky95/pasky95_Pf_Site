@@ -19,7 +19,7 @@ section#contact div.wrap div.ctbox div.ctimg {
   width: calc(100% - 65%);
 }
 section#contact div.wrap div.ctbox div.ctimg img {
-  
+  filter: contrast(1.4) grayscale(1) brightness(1);
 }
 section#contact div.wrap div.ctbox div.ctinfo {
   
