@@ -56,17 +56,13 @@ section#contact div.wrap div.ctbox div.ctinfo div.ctsitego {
   gap: 20px;
   margin-top: 8rem;
 }
-section#contact div.wrap div.ctbox div.ctinfo div.ctsitego button {
-  background: transparent;
-  border: none;
-}
-section#contact div.wrap a.more:hover{
+section#contact div.wrap .more:hover{
   background-color: rgb(10, 205, 206);
 }
-section#contact div.wrap a.more span{  
+section#contact div.wrap .more span{  
   font-weight: 600;
   color: rgb(10, 205, 206);
 }
-section#contact div.wrap a.more:hover span{
+section#contact div.wrap .more:hover span{
   color: rgb(34, 34, 34);
 }

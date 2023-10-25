@@ -35,9 +35,9 @@
 }
   
 #about .wrap div.hello h2 {
-  font-size: 48px;
-  text-shadow: rgb(10, 205, 206) 1px 0 10px;
-  font-weight: 300;
+  font-size: 4.8rem;
+  font-weight: 700;
+  color: #fff;
 }
   
 #about .wrap div.about p {
