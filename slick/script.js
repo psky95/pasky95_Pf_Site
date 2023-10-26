@@ -1,13 +1,13 @@
 $(document).ready(function () {
     $('.js-slick').slick({
-      autoplay: true,
-      autoplaySpeed: 500000,
+      autoplay: false,
+      autoplaySpeed: 2000,
       dots: true,
-      draggable: false,
+      draggable: true,
       fade: true,
-      speed: 800
+      speed: 700,
+      swipe: true
     });
-    
     $('.js-slick').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
       $(slick.$slides).removeClass('is-animating');
     });
