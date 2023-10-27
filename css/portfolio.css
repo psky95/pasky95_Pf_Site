@@ -2,68 +2,50 @@
 #portfolio .wrap .pfpackage> div:nth-of-type(1) {
   display: flex;
 }
-
 #portfolio .wrap .pfpackage a.imgbox {
   width: calc(100% / 2);
   display: flex;
   justify-content: center;
 }
 #portfolio .wrap .pfpackage a.imgbox img{
-  
   height: 300px;
 }
-
 #portfolio .wrap .pfpackage div.pftitle { 
   width: calc(100% / 2);
   padding-left: 6.5rem;
   box-sizing: border-box;
   cursor: pointer;
 }
-
-#portfolio .wrap .pfpackage div.pftitle .pfh{
-  
-}
 #portfolio .wrap .pfpackage div.pftitle > a.pfh >div h3 {
   line-height: 1.6;
   font-weight: 600;
 }
-
 #portfolio .wrap .pfpackage div.pftitle > a.pfh >div h4 {
   color: #aeaeae;
   font-weight: 600;
   line-height: 1.6;
 }
-
 #portfolio .wrap .pfpackage div.pftitle > a.pfh ul.hashtag {
   display: flex;
   gap: 1.5rem;
   margin-top: 2rem;
   flex-wrap: wrap;
 }
-
 #portfolio .wrap .pfpackage div.pftitle > a.pfh ul.hashtag li {
   border: 2px solid rgba(10, 205, 206, 0.25);
   padding: 0.7rem 1.2rem;
   border-radius: 1.3rem;
 }
-
 #portfolio .wrap .pfpackage div.pftitle > a.pfh ul.hashtag li span{
   color: rgb(10, 205, 206);
 }
-
-#portfolio .wrap div.pfbox1 div.pftitle > .more {
-
-}
-
 #portfolio .wrap .pfpackage div.pftitle > .more:hover{
   background-color: rgb(10, 205, 206);
 }
-
 #portfolio .wrap .pfpackage div.pftitle > .more span{  
   font-weight: 600;
   color: rgb(10, 205, 206);
 }
-
 #portfolio .wrap .pfpackage div.pftitle > .more:hover span{  
   color: rgb(34, 34, 34);
 }
@@ -74,20 +56,11 @@
   min-height: 88rem;
   display: flex;
 }
-
 #portfolio .wrap {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
-#portfolio .wrap h2.h2{ 
-}
-
-#portfolio .wrap .contentslide{
-  
-}
-
 #portfolio .wrap .pfpackage{ 
   padding: 50px 0;
 }
@@ -95,7 +68,6 @@
 #portfolio .wrap .pfpackage div.pftitle > div.pfh >div h3 { 
   line-height: 1.6;
 }
-
 #portfolio .wrap .pfpackage div.pftitle > div.pfh >div h4 {
   margin-top: 1rem;
   color: #aeaeae;
@@ -106,7 +78,6 @@
   gap: 1.5rem;
   margin-top: 2.5rem;
 }
-
 #portfolio .wrap .pfpackage div.pftitle > div.pfh ul.hashtag li {
   border: 2px solid rgba(10, 205, 206, 0.25);
   padding: 0.7rem 1.2rem;
@@ -115,22 +86,18 @@
 #portfolio .wrap .pfpackage div.pftitle > div.pfh ul.hashtag li span{ 
   color: #0ac7c8;
 }
-
 #portfolio .wrap .pfpackage div.pftitle .button-flex{
   display: flex;
   margin-top: 10.3rem;
   gap: 2rem;
 }
-
 #portfolio .wrap .pfpackage div.pftitle div .more span{
   color: #0ac7c8;
   font-weight: 600;
 }
-
 #portfolio .wrap .pfpackage div.pftitle div .more:hover span{  
   color: rgb(34, 34, 34);
 }
-
 #portfolio .wrap .pfpackage div.pftitle div .more:hover{
   background-color: rgb(10, 205, 206);
 }
