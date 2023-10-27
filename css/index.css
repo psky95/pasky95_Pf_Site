@@ -68,6 +68,8 @@ header div ul.gnb li .logohover img{
 
 }
 header div ul.gnb li .logohover{
+  display: block;
+  cursor: pointer;
 }
 header div ul.gnb li .logohover svg{ 
   fill: white;
